@@ -31,7 +31,7 @@ int main(void)
 		a++; }
 	array[a] = NULL;
 	if (strcmp_custom(array[0], "exit") == 0)
-		b = 0;
+		b = 2;
 
 	pid = fork();
 	if (pid == -1)
@@ -44,8 +44,23 @@ int main(void)
 		exit(0); }
 	else
 		wait(&status);
-
+	exits(b);
 	a = 0;
 	free(array); }
 return (0);
+}
+
+
+/**
+ * exits - exit the shell
+ * @c: arg count
+ *
+ * Return: 0 on success
+ */
+void exits(int c)
+{
+	if(c == 2)
+	{
+	exit(0);
+	}
 }

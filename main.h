@@ -30,6 +30,7 @@ char* strcat_custom(char* destination, const char* source);
 char *get_location(char *command);
 void execmd(char **argv);
 void printEnvironment();
+void exits (int c);
 
 
 #endif
