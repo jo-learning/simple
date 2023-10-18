@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
-* freearr - simple shell main function
+* freearray - simple shell main function
 * @arr: count of arguments
 * Return: 0 Always (success)
 */
