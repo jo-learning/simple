@@ -26,6 +26,9 @@ int main(int argc, char **argv)
 		if (!command)
 			continue;
 		idx++;
-		status = execute_cus(command, argv, idx);
+		if (is_builtin(command[0]))
+			handle_builtin(command, argv, status, idx);
+		else
+			status = execute_cus(command, argv, idx);
 	}
 }

@@ -27,7 +27,10 @@ void printerror(char *name, char *cmd, int idx);
 char *_itoa(int n);
 void reverse_string(char *str, int len);
 char *strcpy_cus(char *dest, char *src);
-
+int is_builtin(char *command);
+void handle_builtin(char **command, char **argv, int status, int idx);
+void exit_shell (char **command, int status);
+void print_env(char **command, int status);
 
 
 
