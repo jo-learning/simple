@@ -20,8 +20,13 @@ int strlen_cus(char *s);
 char *strcat_cus(char *dest, char *src);
 char **tokenizer(char *line);
 void freearray(char **arr);
-int execute_cus(char **command, char **argv);
-
+int execute_cus(char **command, char **argv, int idx);
+char *_getenv(char *variable);
+char *_getpath(char *command);
+void printerror(char *name, char *cmd, int idx);
+char *_itoa(int n);
+void reverse_string(char *str, int len);
+char *strcpy_cus(char *dest, char *src);
 
 
 

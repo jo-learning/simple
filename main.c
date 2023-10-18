@@ -10,7 +10,7 @@ int main(int argc, char **argv)
 {
 	char *line = NULL;
 	char **command = NULL;
-	int status = 0;
+	int status = 0, idx = 0;
 	(void) argc;
 
 	while (1)
@@ -25,6 +25,7 @@ int main(int argc, char **argv)
 		command = tokenizer(line);
 		if (!command)
 			continue;
-		status = execute_cus(command, argv);
+		idx++;
+		status = execute_cus(command, argv, idx);
 	}
 }

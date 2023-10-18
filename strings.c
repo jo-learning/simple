@@ -88,9 +88,16 @@ char *strcat_cus(char *dest, char *src)
 * @dest: count of arguments
 * @src: Arguments
 * Return: 0 Always (success)
-*
-*char strcpy_cus(char *dest, char *src)
-*{
-*	int i = 0;
-*}
 */
+char *strcpy_cus(char *dest, char *src)
+{
+	int i = 0;
+
+	while (src[i])
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = '\0';
+	return (dest);
+}
