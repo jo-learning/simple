@@ -1,10 +1,9 @@
+#include "shell.h"
 /**
 * strdup_cus - simple shell main function
 * @str: String
 * Return: 0 Always (success)
 */
-
-#include "shell.h"
 
 char *strdup_cus(const char *str)
 {
@@ -92,6 +91,6 @@ char *strcat_cus(char *dest, char *src)
 *
 *char strcpy_cus(char *dest, char *src)
 *{
-*	int i = 0;	
+*	int i = 0;
 *}
 */

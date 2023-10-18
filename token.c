@@ -9,7 +9,7 @@ char **tokenizer(char *line)
 {
 	char *token = NULL, *tmp = NULL;
 	char **command = NULL;
-	int c = 0, i = 0;	
+	int c = 0, i = 0;
 
 	if (!line)
 		return (NULL);
@@ -27,7 +27,7 @@ char **tokenizer(char *line)
 		token = strtok(NULL, DELIM);
 	}
 	free(tmp), tmp = NULL;
-	command = malloc(sizeof(char *)*(c + 1));
+	command = malloc(sizeof(char *) * (c + 1));
 	if (!command)
 	{
 		free(line), line = NULL;
